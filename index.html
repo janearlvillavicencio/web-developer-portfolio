@@ -8,19 +8,39 @@
 	<!-- CSS Bootstrap -->
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	<!-- Google Fonts -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+	<!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="./index.css">
+
+
+
+	<!-- Other meta tags and stylesheets -->
+	  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+	  <script>
+	    AOS.init();
+	  </script>
+
 
 </head>
 <body>
 
 	<!-- Navbar Start -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
-		<a href="#landing" class="navbar-brand d-lg-none">Jarel</a>
+	<nav class="navbar navbar-expand-lg navbar-light sticky-top bg-secondary">
+		<a href="#landing" class="navbar-brand d-lg-none">Jarel Villavicencio</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#potfolio-nav">
 			<span class="navbar-toggler-icon"></span>
 			
 		</button>
 
-		<div class="collapse navbar-collapse" id="portfoilio-nav">
+		<div class="collapse navbar-collapse" id="portfolio-nav">
 			<ul class="navbar-nav ml-auto text-center text-md-left">
 				<li class="nav-item">
 					<a href="#landing" class="nav-link">Home</a>
@@ -32,156 +52,266 @@
 			</ul>
 			<a href="#landing" class="navbar-brand mx-3 d-none d-lg-inline">Jarel</a>
 			<ul class="navbar-nav pl-0 mr-auto text-center text-md-left">
+
+				<li class="nav-item">
+					<a href="#tools" class="nav-link">Tools</a>
+				</li>
+
 				<li class="nav-item">
 					<a href="#contact" class="nav-link">Contact</a>
 				</li>
 				
-				<li class="nav-item">
-					<a href="#tools" class="nav-link">Tools</a>
-				</li>
+				
 			</ul>		
 		</div>		
 	</nav>
 	<!-- Navbar End -->
 
 	<div class="container-fluid">
-		<div id="landing" class="row bg-primary justify-content-center align-items-center py-4 py-lg-5" >
-			<div class="col-10 col-md-3 p-3 py-lg-5">
-				<img src="..." class="img-fluid rounded-circle border-dark border">
-				
-			</div>
-
-			<div class="col-md-7 col-lg-5 pl-md-5 py-lg-5">
-				<h1 class="mt-2 text-center text-md-left">Jan Earl Villavicencio</h1>
-				<h3 class="mt-2 text-center text-md-left">Full Stack Web Developer</h1>
-				<p class="text-justify">
+		<div data-aos="zoom-in-down">
+			<div id="landing" class="row justify-content-center align-items-center py-4 py-lg-5" >
+				<div class="col-10 col-md-3 p-5 py-lg-5">
+					<img src="./images/me.jpg" class="img-fluid rounded-circle border-dark border" width="700px">
 					
-				</p>
+				</div>
+
+				<div class="col-md-7 col-lg-5 pl-md-5 py-lg-5">
+					<h1 class="mt-2 text-center text-md-left display-1">Jan Earl Villavicencio</h1>
+					<h3 class="mt-2 text-center text-md-left display-4">Full Stack Web Developer</h3>
+					<p class="text-justify"> A Registered Mechanical Engineer transitioning to a Web Developer role.
+						
+					</p>
+					
+				</div>
 				
 			</div>
-			
-		</div>
+		</div>	
 		<!-- End of Landing -->
 
 		<!-- Start of Project -->
-		<h1 class="mt-5 mb-1 text-center">Projects</h1>
-		<div id="projects" class="card-deck my-5 justify-content-center">
-			<div class="card col-md-3">
-				<img src="..." class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 class="card-title">Frontend Web Developer</h5>
-					<p class="card-text"></p>
-					<p class="card-text"></p>	
-				</div>	
-			</div>
-			
-			<div class="card col-md-3">
-				<img src="..." class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 class="card-title">Backend Web Developer</h5>
-					<p class="card-text"></p>
-					<p class="card-text"></p>	
-				</div>	
-			</div>
 
-			<div class="card col-md-3">
-				<img src="..." class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 class="card-title">Fullstack Web Developer</h5>
-					<p class="card-text"></p>
-					<p class="card-text"></p>	
-				</div>	
-			</div>
+		<h1 class="mt-5 mb-1 text-center display-4">My Projects</h1>
+		<div data-aos="fade-right">
+			<div id="projects" class="card-deck my-5 justify-content-center">
 
-		</div>
+				
+					<div class="card col-md-3">
+						<img src="https://getbootstrap.com/docs/4.0/examples/screenshots/album.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title text-center">Frontend Project</h5>
+
+							<p class="card-text">" A frontend project refers to the development of the user interface (UI) and user experience (UX) components of a software application or website. It involves creating the visual elements and interactive features that users interact with directly. Frontend development typically focuses on the client-side of the application, which is responsible for rendering the UI in a web browser or mobile device. "</p>
+							<p class="card-text"></p>	
+						</div>	
+					</div>
+				
+				
+					<div class="card col-md-3">
+						<img src="https://getbootstrap.com/docs/4.0/examples/screenshots/jumbotron.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title text-center">Backend Project</h5>
+							<h4 class="card-title text-center">E-Commerce</h4>
+							<p class="card-text">" A backend project refers to the development of the server-side components and infrastructure of a software application or website. It focuses on the underlying logic, data storage, and processing that supports the frontend user interface. Backend development involves handling requests from the frontend, processing data, interacting with databases, and returning responses. "</p>
+							<p class="card-text"></p>	
+						</div>	
+					</div>
+				
+
+				
+					<div class="card col-md-3">
+						<img src="https://getbootstrap.com/docs/4.0/examples/screenshots/carousel.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title text-center">Fullstack Project</h5>
+							<h4 class="card-title text-center">E-Commerce API</h4>
+							<p class="card-text">" A full-stack project refers to the development of both the frontend and backend components of a software application or website. It involves creating the complete technology stack required to build and deploy a functional and interactive application. "</p>
+							<p class="card-text"></p>	
+						</div>	
+					</div>
+				
+			</div>
+		</div>	
 		<!-- End of Project -->
 
 		<!-- Start of Tools -->
 
-		<div id="tools" class="row flex-column bg-primary jumbotron">
-			<h1 class="my-1 text-center">Tools</h1>
+		<div id="tools" class="row flex-column">
+		<h1 class="my-1 text-center display-4">Tools</h1>
+			<div data-aos="zoom-in-down">	
+				<div class="row justify-content-center py-3">
+					<div class="col-md-3 col-lg-2 mx-4 my-3">
+						<h3 class="my-3 text-center">Front End</h3>
+						<div class="row justify-content-center">
+							<div class="col-6"><img src="./images/logo-html5.png" class="img-fluid"></div>
+							<div class="col-6"><img src="./images/logo-bootstrap.png" class="img-fluid"></div>
+							<div class="col-6"><img src="./images/logo-css3.png" class="img-fluid"></div>
+							<div class="col-6"><img src="./images/logo-javascript.png" class="img-fluid"></div>
+							
+						</div>
+						
+					</div>
 
-			<div class="row justify-content-center py-3">
-				<div class="col-md-3 col-lg-2 mx-4 my-3">
-					<h3 class="my-3 text-center">Front End</h3>
-					<div class="row justify-content-center">
-						<div class="col-6"><img src="./images/logo-html5.png" class="img-fluid"></div>
-						<div class="col-6"><img src="./images/logo-bootstrap.png" class="img-fluid"></div>
-						<div class="col-6"><img src="./images/logo-css3.png" class="img-fluid"></div>
-						<div class="col-6"><img src="./images/logo-javascript.png" class="img-fluid"></div>
+					<div class="col-md-3 col-lg-2 mx-4 my-3">
+						<h3 class="my-3 text-center">MERN</h3>
+						<div class="row justify-content-center">
+							<div class="col-6"><img src="./images/logo-react.png" class="img-fluid"></div>
+							<div class="col-6"><img src="./images/logo-expressjs.png" class="img-fluid"></div>
+							<div class="col-6"><img src="./images/logo-nodejs.png" class="img-fluid"></div>
+							<div class="col-6"><img src="./images/logo-mongodb.png" class="img-fluid"></div>
+							
+						</div>
+						
+					</div>
+
+					<div class="col-md-3 col-lg-2 mx-4 my-3">
+						<h3 class="my-3 text-center">Other Tools</h3>
+						<div class="row justify-content-center">
+							<div class="col-6"><img src="./images/logo-postman.png" class="img-fluid"></div>
+							<div class="col-6"><img src="./images/logo-rest.png" class="img-fluid"></div>
+							<div class="col-6"><img src="./images/logo-sublime-text-3.png" class="img-fluid"></div>
+							<div class="col-6"><img src="./images/logo-git.png" class="img-fluid"></div>
+							<div class="col-6"><img src="./images/logo-gitlab-ci-cd.png" class="img-fluid"></div>
+							<div class="col-6"><img src="./images/logo-heroku.png" class="img-fluid"></div>
+							
+						</div>
 						
 					</div>
 					
 				</div>
-
-				<div class="col-md-3 col-lg-2 mx-4 my-3">
-					<h3 class="my-3 text-center">Back End</h3>
-					<div class="row justify-content-center">
-						<div class="col-6"><img src="./images/logo-react.png" class="img-fluid"></div>
-						<div class="col-6"><img src="./images/logo-expressjs.png" class="img-fluid"></div>
-						<div class="col-6"><img src="./images/logo-nodejs.png" class="img-fluid"></div>
-						<div class="col-6"><img src="./images/logo-mongodb.png" class="img-fluid"></div>
-						
-					</div>
-					
-				</div>
-
-				<div class="col-md-3 col-lg-2 mx-4 my-3">
-					<h3 class="my-3 text-center">Other Tools</h3>
-					<div class="row justify-content-center">
-						<div class="col-6"><img src="./images/logo-postman.png" class="img-fluid"></div>
-						<div class="col-6"><img src="./images/logo-rest.png" class="img-fluid"></div>
-						<div class="col-6"><img src="./images/logo-sublime-text-3.png" class="img-fluid"></div>
-						<div class="col-6"><img src="./images/logo-git.png" class="img-fluid"></div>
-						<div class="col-6"><img src="./images/logo-gitlab-ci-cd.png" class="img-fluid"></div>
-						<div class="col-6"><img src="./images/logo-heroku.png" class="img-fluid"></div>
-						
-					</div>
-					
-				</div>
-				
-			</div>
-			
+			</div>	
 		</div>
 
 		<!-- End of Tools -->
 
 		<!-- Start of Contacts -->
 
-		<h1 class="text-center my-5">Contact Me</h1>
+		<h1 class="text-center my-3 display-4">Contact Me</h1>
 
-		<div class="row justify-content-center mb-5">
-			<div class="col-3 col-md-1">
-				
-				
+		<div class="row">
+			<div class="col-md-6 my-4">
+				<h4 class="text-center my-4">Visit Me</h4>
+				<img class="img-fluid" src="./images/visit.png" alt="...">
 			</div>
+
+			<div class="col-md-6 my-4">
+				<h4 class="text-center my-4">Message Me</h4>
+					<form id="form-col" class="p-2">
+											
+										  <div class="form-group mt-2">
+										    <label for="exampleInputName1">Full Name</label>
+										    <input type="text" class="form-control" id="exampleInputName1" placeholder="Your Name">
+										    
+										  </div>
+
+										  <div class="form-group">
+										    <label for="exampleInputEmail1">Email address</label>
+										    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com">
+
+										  </div>
+
+										  <div class="form-group">
+										    <label for="exampleInputName1">Contact Number</label>
+										    <input type="contact_number" class="form-control" id="exampleInputName1" placeholder="+63 900 000 000">
+										    
+										  </div>
+
+										  <div class="form-group">
+										      <label for="exampleFormControlTextarea1">Message</label>
+										      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+										  </div>
+
+										  <button type="button" class="btn btn-primary bg-dark" data-toggle="modal" data-target="#modalDiv">Send</button>
+									  
+					</form>
+			</div>
+
+
+			<div id="contact" class="row justify-content-center mb-5">
+
+			<div class="col-3 col-md-1">
+				<a href="https://www.linkedin.com" target="_blank">
+				  <i class="fab fa-linkedin-in"></i>
+				</a>
+			</div>
+
+			<div class="col-3 col-md-1">
+				<a href="https://www.facebook.com" target="_blank">
+				  <i class="fab fa-facebook"></i>
+				</a>
+			</div>
+				
+
+			<div class="col-3 col-md-1">
+				<a href="https://github.com/" target="_blank">
+				   <i class="fab fa-github"></i>
+				</a>
+			</div>
+
+			<div class="col-3 col-md-1">
+				<a href="https://www.twitter.com" target="_blank">
+				  <i class="fab fa-twitter"></i>
+				</a>
+			</div>
+
+			<div class="col-3 col-md-1">
+				<a href="https://www.instagram.com" target="_blank">
+				  <i class="fab fa-instagram"></i>
+				</a>
+			</div>
+			
+		</div>
+			<!-- Modal Section Start -->
+
+						<div id="modalDiv" class="modal" tabindex="-1">
+						  <div class="modal-dialog">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title text-dark">Thank you for contacting us!</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body text-dark">
+						        <p>Message successfully sent.</p>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						        
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+
+			<!-- Modal Section End -->
 			
 		</div>
 
 		<!-- End of Contacts -->
 	</div>
 
-	<!--  -->
 
 
 
+	<div class="footer py-1 text-center">
+            <p>Jan Earl Villavicencio</p>
+            <p>Full Stack Web Developer</p>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
+	<!-- End Footer -->
 
 
 	<!-- JS Bundle -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+	<script>
+  AOS.init({
+    duration: 1200, // Animation duration in milliseconds
+    offset: 400, // Offset (in pixels) from the element's position to trigger the animation
+    easing: 'ease-in-out', // Easing function to control the animation
+    // Other options...
+  });
+</script>
 
 </body>
 </html>
